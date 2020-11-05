@@ -29,12 +29,20 @@ router.post("/Makeup", (req, res) =>{
     res.json(data))
 })
 
-router.put("/Makeup/:id", (req, res) =>{
-    Makeup,findOneAndUpdate({id: req.params.id }, req.body)
+router.put("/Makeup/currency/:currency", (req, res) =>{
+    // console.log("It works!")
+    Makeup.findOneAndUpdate({ "currency": req.params.currency }, req.body)
     .then(data => {
         res.json(data)
     })
 })
+
+// router.delete("/Makeup/:currency", (req, res) => {
+//     Makeup.findOneAndDelete({ "currency": req.params.currency }, req.body)
+//     .then(data => {
+//         res.json(data)
+//     })
+// })
 
 
 
