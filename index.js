@@ -37,12 +37,12 @@ router.put("/Makeup/currency/:currency", (req, res) =>{
     })
 })
 
-// router.delete("/Makeup/:currency", (req, res) => {
-//     Makeup.findOneAndDelete({ "currency": req.params.currency }, req.body)
-//     .then(data => {
-//         res.json(data)
-//     })
-// })
+router.delete("/Makeup/:currency", (req, res) => {
+    Makeup.findOneAndDelete({ "currency": req.params.currency }, req.body)
+    .then(data => {
+        res.json(data)
+    })
+})
 
 
 
