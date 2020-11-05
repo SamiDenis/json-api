@@ -1,0 +1,23 @@
+{
+  "name": "json-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamiDenis/json-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamiDenis/json-api/issues"
+  },
+  "homepage": "https://github.com/SamiDenis/json-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.12"
+  }
+}
