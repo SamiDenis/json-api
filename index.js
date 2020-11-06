@@ -2,15 +2,15 @@ const express = require("express");
 const router = express();
 const Makeup = require("./models/Makeup");
 const body = require("body-parser");
-// const cors = require("cors");
+const cors = require("cors");
 
 
 router.use(body.json());
 
-// router.use(cors());
+router.use(cors());
 
 router.get("/", (req, res) =>{
-    res.redirect("Makeup")
+    res.redirect("/Makeup")
 })
 
 router.get("/Makeup", (req, res) =>{
