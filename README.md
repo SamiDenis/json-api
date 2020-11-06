@@ -1,4 +1,6 @@
 # json-api
+MAKEUP API LINK: http://makeup-api.herokuapp.com/api/v1/products.json?brand=fenty&product_type=lipstick
+
 
 (Using GET) http://localhost:9000/Makeup/ ==> 
 *page accessing the info for Fenty Madamoiselle lipsticks and their shades

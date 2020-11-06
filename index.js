@@ -2,9 +2,12 @@ const express = require("express");
 const router = express();
 const Makeup = require("./models/Makeup");
 const body = require("body-parser");
+const cors = require("cors");
 const { findOneAndUpdate } = require("./models/Makeup");
 
 router.use(body.json());
+
+router.use(cors());
 
 router.get("/", (req, res) =>{
     res.redirect("Makeup")
@@ -45,7 +48,10 @@ router.delete("/Makeup/:currency", (req, res) => {
 })
 
 
+router.set("port", process.env.PORT || 8080);
 
-router.listen(9000, () =>{
-    console.log("Its over 9000!")
-})
+router.listen(router.get("port"), () => console.log("They see me rollin...on port 8080..."));
+// router.listen(9000, () =>{
+//     console.log("Its over 9000!")
+// })
+
