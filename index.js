@@ -3,7 +3,7 @@ const router = express();
 const Makeup = require("./models/Makeup");
 const body = require("body-parser");
 const cors = require("cors");
-const { findOneAndUpdate } = require("./models/Makeup");
+
 
 router.use(body.json());
 
