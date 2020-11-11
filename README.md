@@ -1,5 +1,5 @@
 # json-api
-MAKEUP API LINK: http://makeup-api.herokuapp.com/api/v1/products.json?brand=fenty&product_type=lipstick
+MAKEUP API LINK: https://japi-pro.herokuapp.com/Makeup
 
 
 (Using GET) http://localhost:9000/Makeup/ ==> 
