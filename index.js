@@ -19,33 +19,33 @@ router.get("/Makeup", (req, res) =>{
     })
 })
 
-// router.get("/Makeup/:id", (req, res) =>{
-//     Makeup.find({"product_colors._id": req.params.id},{
-//         "product_colors.$": 1
-//     }).then(data =>{
-//         res.json(data)
-//     })
-// })
+router.get("/Makeup/:id", (req, res) =>{
+    Makeup.find({"product_colors._id": req.params.id},{
+        "product_colors.$": 1
+    }).then(data =>{
+        res.json(data)
+    })
+})
 
-// router.post("/Makeup", (req, res) =>{
-//     Makeup.create(req.body).then((data) =>
-//     res.json(data))
-// })
+router.post("/Makeup", (req, res) =>{
+    Makeup.create(req.body).then((data) =>
+    res.json(data))
+})
 
-// router.put("/Makeup/currency/:currency", (req, res) =>{
-//     // console.log("It works!")
-//     Makeup.findOneAndUpdate({ "currency": req.params.currency }, req.body)
-//     .then(data => {
-//         res.json(data)
-//     })
-// })
+router.put("/Makeup/currency/:currency", (req, res) =>{
+    // console.log("It works!")
+    Makeup.findOneAndUpdate({ "currency": req.params.currency }, req.body)
+    .then(data => {
+        res.json(data)
+    })
+})
 
-// router.delete("/Makeup/:currency", (req, res) => {
-//     Makeup.findOneAndDelete({ "currency": req.params.currency }, req.body)
-//     .then(data => {
-//         res.json(data)
-//     })
-// })
+router.delete("/Makeup/:currency", (req, res) => {
+    Makeup.findOneAndDelete({ "currency": req.params.currency }, req.body)
+    .then(data => {
+        res.json(data)
+    })
+})
 
 
 router.set("port", process.env.PORT || 8080);
